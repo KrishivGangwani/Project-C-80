@@ -24,7 +24,7 @@ function sorting(){
 }
 
 function Search(){
-    var s= document.getElementById("Search_names").value;
+    var s= document.getElementById("Search_name").value;
     var found= 0;
     var j;
     for (j=0; j<name_of_guest_array.length; j++){
@@ -32,6 +32,6 @@ function Search(){
             found=found+1;
         }
     }
-    document.getElementById("Search_names").innerhtml = "Name found"+found+"Time/s";
+    document.getElementById("Search_names").innerHTML = "Name found"+found+"Time/s";
     console.log("Found Name "+found+" Time/s ")
     }
